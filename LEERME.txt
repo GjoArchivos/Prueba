@@ -1,0 +1,5 @@
+Termine mi Backend 
+
+*ya no pude crearle un Front pero termine mi CRUD
+*cuando meti las validaciones el actualizar dejo de funcionar
+*agrege los json de postman que use para probar mi Crud

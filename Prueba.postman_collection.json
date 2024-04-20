@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "50254ddb-bbc0-47a0-b3c1-08be89c4145d",
+		"name": "Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17726884"
+	},
+	"item": [
+		{
+			"name": "Traer Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/clientes/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traer Consignatarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/consignatarios/consignatarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"consignatarios",
+						"consignatarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traer un Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/clientes/cliente/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes",
+						"cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traer un Consignatario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/consignatarios/consignatario/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"consignatarios",
+						"consignatario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Consignatarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clienteid\": {\r\n        \"clienteactivo\": true,\r\n        \"clientenombre\": \"nuevo\"\r\n       \r\n    },\r\n    \"consignatarioactivo\": true,\r\n    \"consignatarionombre\": \"nuevo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/consignatarios/consignatario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"consignatarios",
+						"consignatario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clienteactivo\": true,\r\n    \"clientenombre\": \"nuevo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/clientes/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clienteactivo\": true,\r\n    \"clientenombre\": \"actualizado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost8081/clientes/cliente/1",
+					"protocol": "http",
+					"host": [
+						"localhost8081"
+					],
+					"path": [
+						"clientes",
+						"cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Consignatario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clienteid\": {\r\n        \"clienteid\": 1,\r\n        \"clienteactivo\": true,\r\n        \"clientenombre\": \"actualizado\"\r\n    },\r\n    \"consignatarioid\": 1,\r\n    \"consignatarioactivo\": true,\r\n    \"consignatarionombre\": \"actualizado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost8081/consignatarios/consignatario/1",
+					"protocol": "http",
+					"host": [
+						"localhost8081"
+					],
+					"path": [
+						"consignatarios",
+						"consignatario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/clientes/cliente/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes",
+						"cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Consignatario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/consignatarios/consignatario/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"consignatarios",
+						"consignatario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
